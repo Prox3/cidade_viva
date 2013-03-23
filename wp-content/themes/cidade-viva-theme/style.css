@@ -23,14 +23,19 @@ a:link,a:visited{color:#0066cc;text-decoration:none;outline:0;}
 a:hover,a:active{color:#0055a9;text-decoration:none;outline:0;}
 body{background:#f4f4f4;font:normal 13px/150% Arial, Helvetica, sans-serif;color:#363636;}
 
-#corpo{
-	margin:20px auto;
-	width:960px;
-	background:#fff;
-	}
+body{
+	background:url('images/background.png') no-repeat;
+}
 
+#corpo{
+	margin:0px auto;
+	width:1000px;
+	background:#fff;
+	margin-top: -10px;
+	}
+/* Header Css Style */
 #header{
-	width:940px;
+	width:1000px;
 	margin:10px;
 	float:left;
 	}
@@ -44,6 +49,7 @@ body{background:#f4f4f4;font:normal 13px/150% Arial, Helvetica, sans-serif;color
 	font-size:18px;
 	margin-bottom:20px;
 	}
+/* @End Header Css Style */
 
 #nav{
 	width:940px;
