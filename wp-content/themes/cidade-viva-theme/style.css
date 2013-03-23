@@ -30,26 +30,7 @@ body{
 #corpo{
 	margin:0px auto;
 	width:1000px;
-	background:#fff;
-	margin-top: -10px;
 	}
-/* Header Css Style */
-#header{
-	width:1000px;
-	margin:10px;
-	float:left;
-	}
-	
-#header h1{
-	font-size:24px;
-	margin-bottom:10px;
-	}
-
-#header h2{
-	font-size:18px;
-	margin-bottom:20px;
-	}
-/* @End Header Css Style */
 
 #nav{
 	width:940px;
@@ -61,10 +42,10 @@ body{
 	}
 
 #conteudo{
-	width:940px;
-	margin:10px;
-	float:left;
-	}
+	width:1000px;
+	display: table;
+	background:#fff;
+}
 
 #artigos{
 	width:630px;

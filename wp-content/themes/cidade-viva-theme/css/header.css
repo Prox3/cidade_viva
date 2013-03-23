@@ -1,0 +1,47 @@
+/* Header Css Style */
+#header{
+	width:1000px;
+	height:250px;
+}
+	
+#header h1{
+	font-size:24px;
+	margin-bottom:10px;
+	}
+
+#header h2{
+	font-size:18px;
+	margin-bottom:20px;
+	}
+
+#header-logo{
+	width:inherit;
+	height:180px;
+	display:table;
+}
+#header-logo{
+	width:inherit;
+	height:180px;
+	display:table;
+}
+
+#header-menu{
+	width:inherit;
+	height:70px;
+	display:table;
+}
+
+#header #logo{
+	display: table;
+	width: 306px;
+	height: 180px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+#header #logo div{
+	display: table-cell;
+	vertical-align: middle;
+}
+/* @End Header Css Style */
+
