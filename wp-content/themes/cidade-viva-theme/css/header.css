@@ -31,17 +31,98 @@
 	display:table;
 }
 
-#header #logo{
+#header #boxLogo{
 	display: table;
-	width: 306px;
+	width: 320px;
 	height: 180px;
-	vertical-align: middle;
 	text-align: center;
 }
 
-#header #logo div{
+#header #boxLogo div{
 	display: table-cell;
 	vertical-align: middle;
 }
+
+#header #boxBusca{
+	display: table;
+	width: 680px;
+	height: 180px;
+}
+
+#header #boxBusca #busca{
+margin:15px 0px 15px 0px;
+display:table;
+float:right;	
+}
+
+#header #boxBusca #busca div{
+	float:left;
+}
+
+#header #boxBusca #busca input{
+	width:165px;
+	height:35px;
+	background:#96bd0d;
+	color:#fff;
+	font-weight:bold;
+	font-style:italic;
+	font-size:11pt;
+	border:0px;
+	padding:0px 10px 0px 10px;
+}
+
+#header #boxBusca #pub-Header{
+	text-align:center;	
+}
+
+#redesSociais ul li, #redesSociais ul li a {
+	width:34px;
+	height:34px;
+	display:table;
+}
+#redesSociais ul
+{
+display: table;
+width: 180px;
+height: auto;
+margin-top: 1px;
+margin-bottom: -5px;
+}
+#redesSociais ul li {
+display: inline-block;
+margin:0px 5px 0px 5px;
+}
 /* @End Header Css Style */
+
+.facebook{
+	background:url(../images/icones/facebook.png) no-repeat;
+}
+
+.facebook:hover{
+	background:url(../images/icones/facebook-hover.png) no-repeat;
+}
+
+.twitter{
+	background:url(../images/icones/twitter.png) no-repeat;
+}
+
+.twitter:hover{
+	background:url(../images/icones/twitter-hover.png) no-repeat;
+}
+
+.plus{
+	background:url(../images/icones/google-plus.png) no-repeat;
+}
+
+.plus:hover{
+	background:url(../images/icones/google-plus-hover.png) no-repeat;
+}
+
+.instagram{
+	background:url(../images/icones/instagram.png) no-repeat;
+}
+
+.instagram:hover{
+	background:url(../images/icones/instagram-hover.png) no-repeat;
+}
 
