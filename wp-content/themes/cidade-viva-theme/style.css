@@ -179,6 +179,92 @@ float: right;
 	color:#fff !important;
 }
 
+.boldItalic11ptBlack{
+	font-weight:bold;
+	font-style:italic;
+	font-size:11pt;
+	color:#000 !important;
+}
+
+.italic11ptBlack{
+	font-weight:normal !important;
+	font-style:italic;
+	font-size:11pt;
+	color:#000 !important;
+}
+
+.italic11ptGray{
+	font-weight:normal !important;
+	font-style:italic;
+	font-size:9pt;
+	color:#3d3d3f !important;
+	
+}
+
 .upperCase{
 	text-transform:uppercase;
 }
+
+.revistaIcon{
+	display: table;
+	background:url(images/iconRevista.png) no-repeat;
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	margin-left: 15px;
+	margin-top: 245px;
+}
+
+#extras-Programacao a:hover .revistaIcon{
+	background:url(images/iconRevista-hover.png) no-repeat;
+}
+
+.jornalIcon{
+	display: table;
+	background:url(images/iconJornal.png) no-repeat;
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	margin-left: 15px;
+	margin-top: 245px;
+}
+
+#extras-Programacao a:hover .jornalIcon{
+	background:url(images/iconJornal-hover.png) no-repeat;
+}
+
+.playIconDest1, .playIconDest2{
+	display: table;
+	background:url(images/iconDestaque.png) no-repeat;
+	width: 60px;
+	height: 60px;
+	position: absolute;
+}
+
+#destaquePrin a:hover .playIconDest1, #destaqueSegun a:hover .playIconDest2{
+	background:url(images/iconDestaque-hover.png) no-repeat;
+}
+
+.playIconDest1{
+	margin-left: 15px;
+	margin-top: 255px;
+}
+
+.playIconDest2{
+margin-left: 15px;
+margin-top: 63px;
+	
+}
+
+.centerVerticalAlign{
+	display:table-cell !important;
+	vertical-align:middle !important;
+}
+
+.linhCinza{
+	border:0px;
+	height:2px;
+	background:#e0e0e1;
+	margin: 10px 0px 10px 0px;
+}
+

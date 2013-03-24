@@ -5,6 +5,7 @@
 	background:#3d3d3f;
 	padding: 15px;
 	float: left;
+	margin-bottom: 15px;
 }
 
 #destaquePrin{
@@ -14,20 +15,152 @@
 	margin-right: 15px;
 }
 
-.imgDestaquePrin{
+#destaqueSegun{
+	display:table;
+	width:305px;
+	height:auto;
+}
+
+#destaqueSegun .imgDestaquePrin{
+	width:295px;
+	height:125px;
+	border:5px solid #58585a;
+}
+
+#destaquePrin .imgDestaquePrin{
 	width:350px;
 	height:320px;
 	border:5px solid #58585a;
 }
 
-#destaquePrin .tituloDestaque{
+#destaquePrin .tituloDestaque {
 	margin: 20px 0px 0px 10px;
 }
 
-#destaquePrin .tituloDestaque p {
-	font-size:18pt !important;
+#destaqueSegun .tituloDestaque{
+margin: 11px 0px 11px 0px;
+}
+
+#destaquePrin .tituloDestaque p, #destaqueSegun .tituloDestaque p {
+	font-size:16pt !important;
 	font-weight:bold;
 	font-style:italic;
 	color:#9b9c9e;
+}
+
+#page-content{
+	display: table;
+float: left;
+width: 710px;
+}
+
+#programacao-completa{
+	display:table;
+	width:690px;
+	height:65px;
+	background:#96bd0d;
+	margin:0px 0px 15px 0px;
+	padding:10px;
+}
+
+#programacao-completa div{
+	float:left;
+	display:table;
+	border-right: 3px solid #000;
+	height:65px;
+}
+
+#programacao-completa div:last-child{
+border:0px;
+}
+
+.icon-Programacao{
+background: url(../images/programacao.png) no-repeat 1px 10px;
+width: 50px;
+}
+
+.content-Programacao{
+width: 470px;
+height: 65px;
+display: table;
+}
+
+.content-Programacao ul{
+display: table;
+}
+
+.content-Programacao ul li{
+	display:inline;
+}
+
+.list-Programacao{
+width: 164px;
+height: 65px;
+display: table;
+}
+
+.list-Programacao a{
+	padding-left: 60px;
+	background: url(../images/arrow-programacao.png) no-repeat 25px 25px;
+}
+
+.box-Programacao{
+	display:table;
+	margin: 0px 0px 0px 14px;
+}
+
+
+.box-Programacao div{
+	float:none !important;
+	padding-right:17px;
+}
+
+#extras-Programacao{
+	display:table;
+	height:320px;
+	width:710px;
+}
+
+#extras-Programacao ul {
+	display:table;
+}
+
+#extras-Programacao ul li{
+	display:inline-block;
+	width:210px;
+	height:320px;
+	margin-right: 26px;
+}
+
+@-moz-document url-prefix() {
+	#destaquePrin .tituloDestaque p, #destaqueSegun .tituloDestaque p {
+		font-size:15pt !important;
+	}
+	#extras-Programacao ul li{
+		margin-right: 24px;
+	}
+}
+
+
+#extras-Programacao .titulo-extras{
+	background:#622280;
+	width:205px;
+	height:auto;
+	padding-left: 5px;
+	margin-bottom: 5px;
+}
+
+#extras-Programacao img{
+	border:5px solid #58585a;
+	width: 200px;
+	height:310px;
+	display:table;
+}
+
+#extras-Programacao .img-extras-blog img{
+	border:5px solid #58585a;
+	width: 200px;
+	height:95px !important;
+	display:table;
 }
 
