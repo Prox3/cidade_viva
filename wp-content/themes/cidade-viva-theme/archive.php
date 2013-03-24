@@ -1,7 +1,11 @@
 <?php get_header(); ?>
 	<div id="conteudo">
 		<div id="artigos">
-		
+		<?php if(is_category('4')) {  ?>
+   <?php  var_dump(include(bloginfo( 'template_url' )."trololo.php"));?>
+   
+  <?php } ?>
+        
 			<?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
 			<?php /* If this is a category archive */ if (is_category()) { ?>
 				Arquivo da Categoria "<?php echo single_cat_title(); ?>"
