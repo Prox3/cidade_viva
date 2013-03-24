@@ -1,6 +1,20 @@
 <?php get_header(); ?>
 	<div id="conteudo">
-		<div id="artigos">
+    	<div id="destaques">
+        	<div id="destaquePrin" class="left">
+            <a href="#">
+            	<div class="imgDestaquePrin">
+                	<img src="<?php bloginfo( 'template_url' ) ?>/images/foto_entrevista.jpg" width="100%" height="100%"/>
+                </div>
+                <div class="tituloDestaque">
+                	<p class="upperCase">PROGRAMA CIDADE VIVA INÉDITO DIA 00/00</p>
+                </div>
+            </a>
+            </div>
+            <div id="destaqueSegun" class="right">
+            </div>
+        </div>
+		<?php /*?><div id="artigos">
 		
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 				<div class="artigo">
@@ -21,7 +35,7 @@
 				</div>			
 			<?php endif; ?>
 			
-		</div>
+		</div><?php */?>
 		
 		<?php get_sidebar(); ?>
 	</div>

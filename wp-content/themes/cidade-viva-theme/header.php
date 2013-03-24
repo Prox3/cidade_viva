@@ -8,6 +8,7 @@
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'template_url' ) ?>/css/footer.css" />
 <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'template_url' ) ?>/css/header.css" />
+<link rel="stylesheet" type="text/css" href="<?php bloginfo( 'template_url' ) ?>/css/index.css" />
 <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'template_url' ) ?>/css/sidebar.css" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <script src="<?php bloginfo( 'template_url' ) ?>/js/jquery.min.js" type="text/javascript"></script>
