@@ -178,3 +178,7 @@ float: right;
 	font-size:11pt;
 	color:#fff !important;
 }
+
+.upperCase{
+	text-transform:uppercase;
+}
