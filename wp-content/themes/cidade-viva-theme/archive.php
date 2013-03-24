@@ -1,9 +1,9 @@
 <?php get_header(); ?>
 	<div id="conteudo">
 		<div id="artigos">
-		<?php if(is_category('4')) {  ?>
-   <?php  var_dump(include(bloginfo( 'template_url' )."trololo.php"));?>
-   
+		<?php if(is_category('4')) 
+		{  ?>
+  			<?php  include("trololo.php");?>
   <?php } ?>
         
 			<?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>

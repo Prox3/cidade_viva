@@ -1,11 +1,6 @@
-<?php get_header(); ?>
-	<div id="conteudo">
-		<div id="artigos">
-			<div class="artigo">
-				<h1>INPUTEI AS PUTA</h1>
-			</div>
-		</div>
-		
-		<?php get_sidebar(); ?>
-	</div>
-<?php get_footer(); ?>
+
+<?php if ( have_posts() ) : while ( have_posts() ) :  the_post_thumbnail("150px"); ?>
+<?php endwhile?>
+<?php endif; ?>
+
+
