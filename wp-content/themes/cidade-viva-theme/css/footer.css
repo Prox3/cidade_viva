@@ -20,3 +20,21 @@
 	width: 970px;
 	margin: 15px;
 }
+
+#footer #content .right #contentAct{
+	height:105px;
+	display:table-cell;
+	vertical-align:middle;
+}
+
+#footer #content .left .links-footer{
+	float:left;
+	width:100px;
+	height:auto;
+}
+
+#footer #content .left #link-footer{
+	display:table-cell;
+	height:105px;
+	vertical-align:middle;
+}
