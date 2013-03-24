@@ -66,6 +66,8 @@ function limpacampo(campo) {
         </div>
         
         <div id="header-menu">
-        MENU
+			  <?php
+                  wp_nav_menu( array('menu' => 'Menu Header', 'container' => ''));
+               ?> 
         </div>
 	</div>

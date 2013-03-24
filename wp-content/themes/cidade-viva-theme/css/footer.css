@@ -1,6 +1,22 @@
 #footer{
 	width:1000px;
-	font-size:11px;
-	background:#fff;
-	text-align:center;
+	height:135px;
+	display:table;
+	margin-top: 2px;
 	}
+	
+#background-footer{
+	position: absolute;
+	width: 100%;
+	height: 135px;
+	left: 0;
+	background: #622280;
+	z-index: -1;
+}
+
+#footer #content{
+	display: table;
+	height: 105px;
+	width: 970px;
+	margin: 15px;
+}

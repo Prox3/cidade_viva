@@ -26,9 +26,10 @@
 }
 
 #header-menu{
-	width:inherit;
-	height:70px;
-	display:table;
+	width: inherit;
+	height: 70px;
+	display: table-cell;
+	vertical-align: middle;
 }
 
 #header #boxLogo{
@@ -76,7 +77,7 @@ float:right;
 }
 
 #redesSociais ul li, #redesSociais ul li a {
-	width:34px;
+	width:35px;
 	height:34px;
 	display:table;
 }
@@ -90,8 +91,15 @@ margin-bottom: -5px;
 }
 #redesSociais ul li {
 display: inline-block;
-margin:0px 5px 0px 5px;
+margin:0px 4px 0px 4px;
 }
+
+@-moz-document url-prefix() {
+	#redesSociais ul li {
+		margin:0px 3px 0px 3px;
+	}
+}
+
 /* @End Header Css Style */
 
 .facebook{
@@ -124,5 +132,28 @@ margin:0px 5px 0px 5px;
 
 .instagram:hover{
 	background:url(../images/icones/instagram-hover.png) no-repeat;
+}
+
+#header-menu ul{
+	display:table;
+}
+
+#header-menu ul li{
+	display:inline !important;
+	margin-right:20px !important;
+}
+
+#header-menu ul li a{
+	padding:10px;
+	background:#96bd0d;
+	color:#fff;
+	font-weight:bold;
+	font-style:italic;
+	font-size:11pt;
+	text-transform:uppercase;
+}
+
+#header-menu ul li a:hover{
+background:#81a404;	
 }
 
