@@ -27,12 +27,6 @@ function limpacampo(campo) {
 <body>
 <div id="corpo">
 	<div id="header">
-		<?php /*?><h1><?php bloginfo('name'); ?></h1>
-		<h2><?php bloginfo('description'); ?></h2>
-		
-		<ul id="nav">
-			<?php wp_list_cats('sort_column=name'); ?>
-		</ul><?php */?>
         <div id="header-logo">
             <div id="boxLogo" class="left">
             	<div>
