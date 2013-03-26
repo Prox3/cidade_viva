@@ -3,9 +3,11 @@
 		<div id="artigos">
 		<?php 
 			if(is_category('Revista')){
-  			include("revista_page.php");
+  			    include("revista_page.php");
 			}else if(is_category('Blog')){
 				include("blog_page.php");
+			}else if(is_category('Coluna no Jornal')){
+				include("jornal_page.php");
 			}else{
 		?>
        
