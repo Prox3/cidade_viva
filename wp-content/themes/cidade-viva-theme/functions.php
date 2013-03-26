@@ -12,7 +12,7 @@ if (function_exists('register_sidebar'))
     ));
 }
 
-function loopBlog($atts, $content = null) {
+function loopPost($atts, $content = null) {
 	extract(shortcode_atts(array(
 		"pagination" => 'true',
 		"query" => '',
@@ -84,6 +84,6 @@ function loopBlog($atts, $content = null) {
 	ob_end_clean();
 	return $content;
 }
-add_shortcode("blog", "loopBlog");
+add_shortcode("loopPost", "loopPost");
 
 ?>
