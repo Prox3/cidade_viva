@@ -4,7 +4,7 @@
         <div id="destaques">
         	<?php
 				//$catId = get_cat_ID('destaque');
-				$catId = get_category_by_slug('destaque')->term_id; 
+				$catId = get_term_by('name', 'Destaque', 'category')->term_id;
 				$args = array( 'numberposts' => '3', 'orderby' => 'post_date', 'category' => $catId );
 				$recent_posts = wp_get_recent_posts($args);
 			?>
@@ -57,7 +57,7 @@
             <div class="content-Programacao">
             <ul>
             	<?php
-				$catId = get_category_by_slug('programas-de-tv')->term_id; 
+				$catId = get_term_by('name', 'programas de tv', 'category')->term_id;
 				$args = array( 'numberposts' => '3', 'orderby' => 'post_date', 'category' => $catId );
 				$recent_posts = wp_get_recent_posts($args);
 				$aux = 1;
@@ -98,33 +98,6 @@
 					}
 					$aux++;
 				} ?>
-            	
-                <?php /*?><li>
-                	<a href="#">
-                    	<div class="box-Programacao" style="border-right:3px solid #000;">
-                            <div class="centerVerticalAlign" style="border-right:0px;">
-                                <p class="boldItalic11ptBlack">00:00</p>
-                                <p class="boldItalic11ptBlack upperCase">reprise</p>
-                            </div>
-                            <div class="centerVerticalAlign">
-                                <p class="italic11ptGray">Descricao</p>
-                            </div>
-                        </div>
-    	            </a>
-                </li>
-                <li>
-                	<a href="#">
-                    	<div class="box-Programacao">
-                            <div class="centerVerticalAlign" style="border-right:0px;">
-                                <p class="boldItalic11ptBlack">00:00</p>
-                                <p class="boldItalic11ptBlack upperCase">reprise</p>
-                            </div>
-                            <div class="centerVerticalAlign">
-                                <p class="italic11ptGray">Descricao</p>
-                            </div>
-                        </div>
-    	            </a>
-                </li><?php */?>
             </ul>
             </div>
             <div class="list-Programacao">
@@ -137,7 +110,7 @@
         <div id="extras-Programacao">
         	<ul>
             	<li>
-                	<?php $catId = get_category_by_slug('revista')->term_id;  ?>
+                	<?php $catId = get_term_by('name', 'revista', 'category')->term_id;  ?>
                     <a href="<?= get_category_link( $catId ); ?> ">
                         <div class="titulo-extras upperCase boldItalic11pt">revistas</div>
                         <div class="img-extras">
@@ -150,7 +123,7 @@
                     </a>
                 </li>
             	<li>
-                    <?php $catId = get_category_by_slug('coluna-no-jornal')->term_id;  ?>
+                    <?php $catId = get_term_by('name', 'coluna no jornal', 'category')->term_id;  ?>
                     <a href="<?= get_category_link( $catId ); ?> ">
                         <div class="titulo-extras upperCase boldItalic11pt">coluna no jornal</div>
                         <div class="img-extras">
@@ -166,12 +139,12 @@
                 <div style="display: inline-table;">
                         <div class="titulo-extras upperCase boldItalic11pt">novidades no blog</div>
                         <?php
-							$catId = get_category_by_slug('blog')->term_id; 
+							$catId = get_term_by('name', 'blog', 'category')->term_id; 
 							$args = array( 'numberposts' => '2', 'orderby' => 'post_date', 'category' => $catId );
 							$recent_posts = wp_get_recent_posts($args);
 							foreach($recent_posts as $post) { 
 								echo('
-								<a href="#">
+								<a href="'.get_permalink($post["ID"]).'">
 									<div class="img-extras-blog">
 										' . get_the_post_thumbnail($recent_posts[0]["ID"]) . '
 									</div>
@@ -188,21 +161,6 @@
 								');
 							}
 					?>
-					<?php /*?>
-                    <a href="#">
-                        <div class="img-extras-blog">
-                            <img src="<?php bloginfo( 'template_url' ) ?>/images/blog2.jpg" width="100%" height="100%" />
-                        </div>
-                        <div>
-                        <p class="upperCase boldItalic11ptBlack">
-                        ACONTECEU NO PROGRAMA 
-                        </p>
-                        <p class="italic11ptGray">
-                        Você fica sabendo de vários assuntos
-                        </p>
-                        </div>
-						<hr class="linhCinza" />
-                    </a><?php */?>
                     </div>
                 </li>
             </ul>
