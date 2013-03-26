@@ -1,10 +1,13 @@
 <?php get_header(); ?>
 	<div id="conteudo">
 		<div id="artigos">
-		<?php if(is_category('4')) 
-		{  ?>
-  			<?php  include("trololo.php");?>
-  <?php } ?>
+		<?php 
+			if(is_category('4')){
+  			include("revista_page.php");
+			}else if(is_category('11')){
+				include("blog_page.php");
+			}else{
+		?>
         
 			<?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
 			<?php /* If this is a category archive */ if (is_category()) { ?>
@@ -39,7 +42,7 @@
 					<p>Lamentamos mas não foram encontrados artigos.</p>
 				</div>			
 			<?php endif; ?>
-			
+			<?php } ?>
 		</div>
 		
 		<?php get_sidebar(); ?>
