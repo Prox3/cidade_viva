@@ -8,6 +8,8 @@
 				include("blog_page.php");
 			}else if(is_category('Coluna no Jornal')){
 				include("jornal_page.php");
+			}else if(is_category('Programas de TV')){
+ 				include("programas_tv_page.php");
 			}else{
 		?>
        
