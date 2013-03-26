@@ -268,3 +268,8 @@ margin-top: 63px;
 	margin: 10px 0px 10px 0px;
 }
 
+.overflowTxt{
+	overflow: hidden;
+	height: 20px;
+	display: block;
+}

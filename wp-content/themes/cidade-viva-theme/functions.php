@@ -34,16 +34,49 @@ function loopBlog($atts, $content = null) {
 	$wp_query->query($query);
 	ob_start();
 	?>
-	<h2><?php echo $category; ?></h2>
-	<ul class="loop">
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'template_url' ) ?>/css/blog.css" />
 	<?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
-		<li><a href="<?php the_permalink() ?>" rel="bookmark"><?php echo $thumbnail_image; the_title(); ?></a></li>
+      <div class="artigo blog" style="margin-bottom:5px; width:710px;">
+          <h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
+          <div class="infoBlog">
+              <div class="calendar"></div>
+              <div class="date">
+                  <p style="text-transform:capitalize;"><?php the_time('d M, Y') ?></p>
+              </div>
+          </div>
+          <div class="infoContent">
+          	  <div>
+              	<?php
+              		if ( has_post_thumbnail() )
+						the_post_thumbnail();
+					echo('
+					  <script type="text/javascript">
+						  $(".infoContent img").removeAttr("width").removeAttr("height");
+						  $.map($(".infoContent img"), function(t,index){
+							  $(t).attr("width", "100%").attr("height","200");
+						  });
+					  </script>
+					');
+				?>
+              </div>
+              <div class="content">
+                  <p><?php the_excerpt(); ?></p>
+              </div>
+              <div class="linkLeiaMais">
+              <a href="<?php the_permalink() ?>">Leia Mais...</a>
+              </div>
+              <div class="footer">
+                  <p>Postado por <?php the_author() ?></p>
+              </div>
+          </div>
+          <hr style="border:0px; border-top: 1px solid #eee;" />
+      </div>
 	<?php endwhile; ?>
-	</ul>
+    
 	<?php if(pagination == 'true'){ ?>
 	<div class="navigation">
-	  <div class="alignleft"><?php previous_posts_link('« Previous') ?></div>
-	  <div class="alignright"><?php next_posts_link('More »') ?></div>
+	  <div class="alignleft"><?php previous_posts_link('« Antigos') ?></div>
+	  <div class="alignright"><?php next_posts_link('Próximos »') ?></div>
 	</div>
 	<?php } ?>
 	<?php $wp_query = null; $wp_query = $temp;

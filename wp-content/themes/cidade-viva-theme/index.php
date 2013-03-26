@@ -152,7 +152,7 @@
 									<p class="upperCase boldItalic11ptBlack">
 									'.$post["post_title"].'
 									</p>
-									<p class="italic11ptGray">
+									<p class="italic11ptGray overflowTxt">
 									'.$post["post_content"].'
 									</p>
 									</div>
