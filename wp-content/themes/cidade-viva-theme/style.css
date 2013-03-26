@@ -273,3 +273,92 @@ margin-top: 63px;
 	height: 20px;
 	display: block;
 }
+
+/*Form contato*/
+#formContato input, #formContato textarea {
+border:1px solid #000;
+font-family: 'Ubuntu', sans-serif !important;
+}
+
+#formContato span{
+	font-family: 'Ubuntu', sans-serif !important;
+	width: 100px;
+display: table;
+float: left;
+}
+
+#formContato p
+{
+width: 705px;
+font-family: 'Ubuntu', sans-serif !important;
+display: table;	
+}
+
+#formContato input[type=text]
+{
+	padding:10px;
+	font-family: 'Ubuntu', sans-serif !important;
+}
+
+#submitContact{
+	cursor:pointer;
+	font-family: 'Ubuntu', sans-serif !important;
+	width: 260px !important;
+	text-align: center;
+	margin-left: 255px;
+}
+
+
+
+#submitContact input{
+	background: #96bd0d !important;
+	font-family: 'Ubuntu', sans-serif !important;
+	cursor: pointer;
+	background: none;
+	font-weight: bold;
+	color: #fff;
+	padding: 10px;
+	border: 0px;
+}
+
+#submitContact input:hover{
+	background: #622280 !important;
+	font-family: 'Ubuntu', sans-serif !important;
+}
+
+#formContato .wpcf7-not-valid-tip-no-ajax, #formContato .wpcf7-not-valid-tip {
+	background-color: #ffeded !important;
+	border: 1px solid #e88f8f !important;
+	font-family: 'Ubuntu', sans-serif !important;
+	border-radius: 5px !important;
+	color: #d51111 !important;
+	font-family: 'HelveticaNeueLT-Light' !important;
+	font-size: 14px !important;
+	margin: 1px 0px 10px 10px !important;
+	clear: both !important;
+	display: inline !important;
+	padding: 10px 15px 10px 15px !important;
+	width:130px !important;
+	position:absolute !important;
+	left: 100% !important;
+	top: 0px !important;
+}
+
+.wpcf7-mail-sent-ok{
+	font-family: 'HelveticaNeueLT-Light' !important;
+	background-color: #f0ffed !important;
+	border: 1px solid #8fe88f !important;
+	font-family: 'Ubuntu', sans-serif !important;
+	border-radius: 5px !important;
+	color: #1d8c0a !important;
+	font-size: 14px !important;
+	margin: 10px auto 10px auto !important;
+	clear: both !important;
+	display: table !important;
+	padding: 10px 15px 10px 15px !important;
+}
+
+div.wpcf7-validation-errors{
+border:0px !important;
+font-family: 'Ubuntu', sans-serif !important;
+}
